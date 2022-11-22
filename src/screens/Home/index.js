@@ -7,8 +7,8 @@ import {
   ChevronDownIcon,
 } from 'react-native-heroicons/solid';
 import {MagnifyingGlassIcon, UserIcon} from 'react-native-heroicons/outline';
-import {Categories} from "../../components/Categories";
-import {FeaturedRow} from "../../components/Featured";
+import {Categories} from '../../components/Categories';
+import {FeaturedRow} from '../../components/Featured';
 
 export const HomeScreen = () => {
   const navigation = useNavigation();
@@ -27,9 +27,7 @@ export const HomeScreen = () => {
           className={'h-7 w-7 bg-gray-300 p-4 rounded-full'}
         />
         <View className="flex-1">
-          <Text className="font-bold text-gray-400 text-xs">
-            Delivery Now!
-          </Text>
+          <Text className="font-bold text-gray-400 text-xs">Delivery Now!</Text>
           <View className="flex-row items-center">
             <Text className="font-bold text-xl">Current Location </Text>
             <ChevronDownIcon size={20} color="#00CCBB" />
@@ -59,13 +57,13 @@ export const HomeScreen = () => {
         />
         <FeaturedRow
           id={2}
-          title="Featured"
-          description="Paid placements from our partner"
+          title="Tasty Discount"
+          description="Grab the discount right now"
         />
         <FeaturedRow
           id={3}
-          title="Featured"
-          description="Paid placements from our partner"
+          title="Offers near you!"
+          description="Find the foods around you"
         />
       </ScrollView>
     </SafeAreaView>
