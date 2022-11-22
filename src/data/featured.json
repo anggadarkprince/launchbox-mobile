@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "Featured",
+    "description": "Paid placements from our partner",
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Warounk Ibu Ida",
+        "description": "This is a test descriptin",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=768,574",
+        "category": "Fast Food"
+      },
+      {
+        "id": 2,
+        "name": "Steak House",
+        "description": "Best steak on the city",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://media.suara.com/pictures/653x366/2021/08/02/81387-ilustrasi-makanan-cepat-saji-freepik.jpg",
+        "category": "Steak"
+      },
+      {
+        "id": 3,
+        "name": "RM Bu Imaa",
+        "description": "Best steak on the city",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://static01.nyt.com/images/2021/04/30/dining/29repeatcook-roundup-8-copy/merlin_186774930_f70cdae6-2782-44db-98fb-4683814160f2-videoSixteenByNine3000.jpg",
+        "category": "Steak"
+      },
+      {
+        "id": 4,
+        "name": "Break N Juice",
+        "description": "Best steak on the city",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://myfoodbook.com.au/sites/default/files/styles/schema_img/public/recipe_photo/Enchiladas%20sm.jpg",
+        "category": "Steak"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Tasty Discount",
+    "description": "Grab the discount right now",
+    "restaurants": [
+      {
+        "id": 5,
+        "name": "Binara",
+        "description": "This is a test descriptino",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2022/06/Chicken-chow-mein-7aeec1d.png?quality=90&resize=556,505",
+      },
+      {
+        "id": 6,
+        "name": "Super Milk Coffee",
+        "description": "Best steak on the city",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/roast_chicken_for_one_41998_16x9.jpg",
+      },
+      {
+        "id": 7,
+        "name": "ReadyT Lunch",
+        "description": "Your meal choice",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/super-bowl-snacks-pepperoni-pizza-dip-1642129113.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
+      },
+      {
+        "id": 8,
+        "name": "B Food",
+        "description": "Something special about B",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/https%3A%2F%2Fs3.amazonaws.com%2Fpixtruder%2Foriginal_images%2Ff5cffedb779ce8ea3991f8020b5616d39ef6c0ee",
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Offers near you!",
+    "description": "Find the foods around you",
+    "restaurants": [
+      {
+        "id": 9,
+        "name": "BBC Fried Chicken",
+        "description": "Quickes food in the city",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://www.dinneratthezoo.com/wp-content/uploads/2017/10/firecracker-chicken-1.jpg",
+      },
+      {
+        "id": 10,
+        "name": "RM Padang 23",
+        "description": "Best padang food",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pork-pineapple-and-onion-skewers-1643668721.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
+      },
+      {
+        "id": 11,
+        "name": "Sikleton",
+        "description": "Nice place to have",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/one-pot-meals-chicken-primavera-1666205376.jpeg?crop=0.536xw:1.00xh;0.253xw,0&resize=480:*",
+      },
+      {
+        "id": 12,
+        "name": "RM Aruna Baa",
+        "description": "Village food and drinks",
+        "rating": 4.5,
+        "address": "Surabaya",
+        "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2013/05/pulled-chicken-beans-b903c2e.jpg?quality=90&resize=556,505",
+      }
+    ]
+  }
+]
