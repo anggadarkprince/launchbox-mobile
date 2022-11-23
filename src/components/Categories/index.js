@@ -7,7 +7,7 @@ export const Categories = () => {
   const [categories, setCategories] = useState(null);
 
   useEffect(() => {
-    Axios.get('categories').then(setCategories);
+    Axios.get('categories').then(response => setCategories(response.data));
   }, []);
 
   return (
@@ -18,7 +18,8 @@ export const Categories = () => {
       }}
       horizontal
       contentContainerStyle={styles.container}
-      showsHorizontalScrollIndicator={false} />
+      showsHorizontalScrollIndicator={false}
+    />
   );
 };
 

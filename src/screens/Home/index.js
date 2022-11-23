@@ -1,4 +1,11 @@
-import { Image, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
 import React, {useLayoutEffect, useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {SafeAreaView} from 'react-native-safe-area-context';
@@ -25,7 +32,7 @@ export const HomeScreen = () => {
   });
 
   useEffect(() => {
-    Axios.get('featured').then(setFeatured);
+    Axios.get('featured').then(response => setFeatured(response.data));
   }, []);
 
   return (
@@ -47,7 +54,7 @@ export const HomeScreen = () => {
         <UserCircleIcon size={30} color="#00CCBB" />
       </View>
       <View className="flex-row items-center space-x-2 pb-2 mx-4">
-        <View className="flex-row space-x-2 flex-1 items-center bg-gray-200 px-3">
+        <View className="flex-row space-x-2 flex-1 items-center bg-gray-200 rounded px-3">
           <MagnifyingGlassIcon color="gray" size={20} />
           <TextInput
             placeholder="Restaurants and cuisines"

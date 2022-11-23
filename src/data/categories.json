@@ -1,50 +1,54 @@
-[
-  {
-    "id": 1,
-    "category": "Pasta",
-    "description": "Nice italian pasta",
-    "image_url": "https://www.seriouseats.com/thmb/px_e8tCpfU7pcNvn4-j3bzQ9kGI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spaghetti-cacio-e-pepe-recipe-hero-02_1-70880518badb4d428f5d5b03d303fabc.JPG",
-  },
-  {
-    "id": 2,
-    "category": "Fast Food",
-    "description": "Any fast food",
-    "image_url": "https://cdn0-production-images-kly.akamaized.net/2OJ6qmrVr4eUlivS7HkafpZuhQI=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3573999/original/074602700_1631786594-pexels-valeria-boltneva-1639565.jpg"
-  },
-  {
-    "id": 3,
-    "category": "Steak",
-    "description": "Meat or chicken steak",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg"
-  },
-  {
-    "id": 4,
-    "category": "Japanese",
-    "description": "Ramen, sushi and more",
-    "image_url": "https://www.tastingtable.com/img/gallery/20-japanese-dishes-you-need-to-try-at-least-once/intro-1664219638.jpg"
-  },
-  {
-    "id": 5,
-    "category": "Indonesian",
-    "description": "Best nusantara cuisines",
-    "image_url": "https://www.holidify.com/images/cmsuploads/compressed/dasde_20190630142325.jpeg"
-  },
-  {
-    "id": 6,
-    "category": "Thai",
-    "description": "Thai food variant",
-    "image_url": "https://a.cdn-hotels.com/gdcs/production109/d913/52127df7-ccff-4762-8255-01b3ba749fca.jpg"
-  },
-  {
-    "id": 7,
-    "category": "Rice",
-    "description": "Rice food variant",
-    "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2020/03/how-to-cook-rice.jpg"
-  },
-  {
-    "id": 8,
-    "category": "Beverages",
-    "description": "Kind of drinks",
-    "image_url": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cmetadata=none%2Conerror=redirect%2Cq=70%2Csharpen=1%2Cwidth=956/wp-content/uploads/beverage-day.jpg"
-  },
-]
+{
+  "code": 200,
+  "status": "OK",
+  "data": [
+    {
+      "id": 1,
+      "category": "Pasta",
+      "description": "Nice italian pasta",
+      "image_url": "https://www.seriouseats.com/thmb/px_e8tCpfU7pcNvn4-j3bzQ9kGI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spaghetti-cacio-e-pepe-recipe-hero-02_1-70880518badb4d428f5d5b03d303fabc.JPG",
+    },
+    {
+      "id": 2,
+      "category": "Fast Food",
+      "description": "Any fast food",
+      "image_url": "https://cdn0-production-images-kly.akamaized.net/2OJ6qmrVr4eUlivS7HkafpZuhQI=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3573999/original/074602700_1631786594-pexels-valeria-boltneva-1639565.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Steak",
+      "description": "Meat or chicken steak",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Japanese",
+      "description": "Ramen, sushi and more",
+      "image_url": "https://www.tastingtable.com/img/gallery/20-japanese-dishes-you-need-to-try-at-least-once/intro-1664219638.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Indonesian",
+      "description": "Best nusantara cuisines",
+      "image_url": "https://www.holidify.com/images/cmsuploads/compressed/dasde_20190630142325.jpeg"
+    },
+    {
+      "id": 6,
+      "category": "Thai",
+      "description": "Thai food variant",
+      "image_url": "https://a.cdn-hotels.com/gdcs/production109/d913/52127df7-ccff-4762-8255-01b3ba749fca.jpg"
+    },
+    {
+      "id": 7,
+      "category": "Rice",
+      "description": "Rice food variant",
+      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2020/03/how-to-cook-rice.jpg"
+    },
+    {
+      "id": 8,
+      "category": "Beverages",
+      "description": "Kind of drinks",
+      "image_url": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cmetadata=none%2Conerror=redirect%2Cq=70%2Csharpen=1%2Cwidth=956/wp-content/uploads/beverage-day.jpg"
+    }
+  ]
+}
