@@ -1,11 +1,30 @@
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
-import { MinusCircleIcon, PlusCircleIcon } from "react-native-heroicons/solid";
+import {MinusCircleIcon, PlusCircleIcon} from 'react-native-heroicons/solid';
+import {useDispatch, useSelector} from 'react-redux';
+import {
+  addToBasket,
+  removeFromBasket,
+} from '../../features/basket/baseketSlice';
 
 export const DishCard = ({dish}) => {
-  const navigation = useNavigation();
   const [isPressed, setIsPressed] = useState(false);
+  const dispatch = useDispatch();
+  const items = useSelector(state => {
+    return state.basket.items.filter(item => item.id === dish.id);
+  });
+  const maxItem = dish?.stock || 100;
+
+  const addItemToBasket = () => {
+    dispatch(addToBasket(dish));
+  };
+
+  const removeItemFromBasket = () => {
+    if (!items.length > 0) {
+      return;
+    }
+    dispatch(removeFromBasket(dish));
+  };
 
   return (
     <>
@@ -38,12 +57,22 @@ export const DishCard = ({dish}) => {
       {isPressed && (
         <View className="bg-white px-4 border-b border-gray-200">
           <View className="flex-row items-center space-x-2 pb-3">
-            <TouchableOpacity>
-              <MinusCircleIcon color="#00CCBB" size={40} />
+            <TouchableOpacity
+              disabled={!items.length}
+              onPress={removeItemFromBasket}>
+              <MinusCircleIcon
+                color={items.length > 0 ? '#00CCBB' : 'gray'}
+                size={40}
+              />
             </TouchableOpacity>
-            <Text className="px-2 font-bold text-lg">0</Text>
-            <TouchableOpacity>
-              <PlusCircleIcon color="#00CCBB" size={40} />
+            <Text className="px-2 font-bold text-lg">{items.length}</Text>
+            <TouchableOpacity
+              disabled={items.length >= maxItem}
+              onPress={addItemToBasket}>
+              <PlusCircleIcon
+                color={items.length < maxItem ? '#00CCBB' : 'gray'}
+                size={40}
+              />
             </TouchableOpacity>
           </View>
         </View>
