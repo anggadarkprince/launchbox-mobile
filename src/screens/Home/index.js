@@ -5,6 +5,7 @@ import {
   Text,
   TextInput,
   View,
+  TouchableOpacity,
 } from 'react-native';
 import React, {useLayoutEffect, useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
@@ -45,23 +46,28 @@ export const HomeScreen = () => {
         <View className="flex-1">
           <Text className="font-bold text-gray-400 text-xs">Delivery Now!</Text>
           <View className="flex-row items-center">
-            <Text className="font-bold text-xl text-gray-800">
+            <Text className="font-bold text-lg text-gray-800">
               Current Location{' '}
             </Text>
             <ChevronDownIcon size={20} color="#00CCBB" />
           </View>
         </View>
-        <UserCircleIcon size={30} color="#00CCBB" />
+        <TouchableOpacity activeOpacity={0.5}>
+          <UserCircleIcon size={30} color="#00CCBB" />
+        </TouchableOpacity>
       </View>
       <View className="flex-row items-center space-x-2 pb-2 mx-4">
         <View className="flex-row space-x-2 flex-1 items-center bg-gray-200 rounded px-3">
           <MagnifyingGlassIcon color="gray" size={20} />
           <TextInput
             placeholder="Restaurants and cuisines"
+            placeholderTextColor={'#aaa'}
             keyboardType="default"
           />
         </View>
-        <AdjustmentsVerticalIcon size={25} color="#00CCBB" />
+        <TouchableOpacity activeOpacity={0.5}>
+          <AdjustmentsVerticalIcon size={25} color="#00CCBB" />
+        </TouchableOpacity>
       </View>
       <ScrollView
         className="bg-gray-100"

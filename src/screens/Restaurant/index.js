@@ -95,9 +95,9 @@ export const RestaurantScreen = ({route, navigation}) => {
           </View>
           <TouchableOpacity
             activeOpacity={0.7}
-            className="flex-row items-center space-x-2 p-4 border-y border-gray-300">
+            className="flex-row items-center space-x-2 p-4 border-t border-gray-300">
             <QuestionMarkCircleIcon color="gray" opacity={0.7} size={20} />
-            <Text className="pl-2 flex-1 text-md food-bold">
+            <Text className="pl-2 flex-1 text-md food-bold text-gray-500">
               Have a food allergy?
             </Text>
             <ChevronRightIcon size={20} color="#00CCBB" />

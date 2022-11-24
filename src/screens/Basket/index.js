@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from 'react';
+import React, {useState, useMemo, useEffect} from 'react';
 import {View, ScrollView, Text, Image, TouchableOpacity} from 'react-native';
 import {XCircleIcon} from 'react-native-heroicons/solid';
 import {useDispatch, useSelector} from 'react-redux';
@@ -25,6 +25,14 @@ export const BasketScreen = ({route, navigation}) => {
     }, {});
     setGroupedItems(grouped);
   }, [items]);
+
+  useEffect(() => {
+    if (!items || items.length === 0) {
+      if (navigation.canGoBack()) {
+        navigation.goBack();
+      }
+    }
+  }, [items, navigation]);
 
   return (
     <View className="pt-14 flex-1" style={{backgroundColor: '#00000077'}}>
@@ -97,6 +105,7 @@ export const BasketScreen = ({route, navigation}) => {
           </View>
 
           <TouchableOpacity
+            onPress={() => navigation.navigate('PreparingOrder')}
             activeOpacity={0.5}
             className="rounded-lg bg-[#00CCBB] px-4 py-3">
             <Text className="text-center text-white text-lg font-bold">

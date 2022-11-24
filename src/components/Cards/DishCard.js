@@ -65,7 +65,9 @@ export const DishCard = ({dish}) => {
                 size={40}
               />
             </TouchableOpacity>
-            <Text className="px-2 font-bold text-lg">{items.length}</Text>
+            <Text className="px-2 font-bold text-lg text-gray-800">
+              {items.length}
+            </Text>
             <TouchableOpacity
               disabled={items.length >= maxItem}
               onPress={addItemToBasket}>
