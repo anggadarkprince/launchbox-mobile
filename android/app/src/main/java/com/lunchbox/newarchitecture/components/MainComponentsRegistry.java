@@ -1,4 +1,4 @@
-package com.deliveroo.newarchitecture.components;
+package com.lunchbox.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
